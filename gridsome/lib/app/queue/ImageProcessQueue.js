@@ -230,7 +230,8 @@ function createOptionsQuery (arr) {
 }
 
 async function createDataUri (buffer, type, width, height, options = {}) {
-  const blur = options.blur !== undefined ? parseInt(options.blur, 10) : 20
+  const { imageBlur } = this.config
+  const blur = options.blur !== undefined ? parseInt(options.blur, 10) : imageBlur
   const resizeOptions = {}
 
   if (options.fit) resizeOptions.fit = sharp.fit[options.fit]
