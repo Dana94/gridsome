@@ -2,6 +2,7 @@ module.exports = {
   siteName: 'Gridsome',
   siteUrl: 'https://www.gridsome.org',
   titleTemplate: '%s | Test',
+  imageBlur: 40,
 
   metaData: {
     someMeta: 'test'
